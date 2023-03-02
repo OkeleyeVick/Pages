@@ -9,12 +9,12 @@
 		<link rel="stylesheet" href="./assets/css/form.css" />
 	</head>
 	<body>
-		<div class="container p-md-0">
-			<div class="title-container">
+		<div class="container p-md-0 col-lg-8 mx-auto">
+			<div class="title-container px-md-3">
 				<h2 class="title">Fill the form carefully</h2>
 				<small>** Please while filling the form, ensure you fill them with them with the correct and available details.</small>
 			</div>
-			<div class="form-container col-md-8 mx-auto">
+			<div class="form-container">
 				<form action="">
 					<!-- each section form @s -->
 					<section class="user-personal-info">
@@ -40,7 +40,14 @@
 								<!-- each input @s -->
 								<div class="form-input col-lg-6 p-0 px-md-3">
 									<label for="phone" class="form-label">Phone number</label>
-									<input type="tel" class="form-control" id="phone" placeholder="Enter phone number" autocomplete="off" />
+									<input
+										type="tel"
+										class="form-control"
+										id="phone"
+										placeholder="Enter phone number"
+										autocomplete="off"
+										minlength="11"
+										maxlength="14" />
 									<div class="sub-text">
 										<small class="error">Please enter a valid email address !</small>
 									</div>
@@ -66,7 +73,7 @@
 									<input type="text" class="form-control" id="nickname" autocomplete="off" />
 									<div class="sub-text">
 										<small class="error">Please enter a valid email address !</small>
-										<small class="little-info"> Nickname musn't have any special chars e.g +, ?, <, > </small>
+										<small class="little-info"> Nickname must NOT have any special chars e.g +, ?, <, > </small>
 									</div>
 								</div>
 							</div>
@@ -75,7 +82,239 @@
 					<!-- each section form @e -->
 					<!-- each section form @s -->
 					<section class="social-media-info">
-						<div class="section-title">
+						<div class="section-title px-md-3">
+							<h5 class="title">Social Media Info</h5>
+							<div class="mt-2">
+								<small class="title-small-text">Fill at least 3 social media accounts you have</small>
+							</div>
+						</div>
+						<div class="section-inner">
+							<div class="row col-12 m-0 align-items-center justify-content-between">
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/facebook.png" alt="" class="img-fluid" />
+										</div>
+										<label for="facebook" class="form-label">Facebook</label>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="facebook"
+										value="https://"
+										placeholder="e.g Facebook URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/whatsapp.png" alt="" class="img-fluid" />
+										</div>
+										<label for="whatsapp" class="form-label">Whatsapp</label>
+									</div>
+									<input type="tel" class="form-control" id="whatsapp" placeholder="Enter Whatsapp number" autocomplete="off" />
+									<small class="error">Enter valid phone number</small>
+								</div>
+								<!-- each form-input @s-->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/instagram.png" alt="" class="img-fluid" />
+										</div>
+										<label for="instagram" class="form-label">Instagram</label>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="instagram"
+										value="https://"
+										placeholder="e.g Instagram URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/linkedin.png" alt="" class="img-fluid" />
+										</div>
+										<label for="linkedIn" class="form-label">LinkedIn</label>
+										<div class="image-container"></div>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="linkedIn"
+										value="https://"
+										placeholder="e.g LinkedIn URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/twitter.png" alt="" class="img-fluid" />
+										</div>
+										<label for="twitter" class="form-label">Twitter</label>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="twitter"
+										value="https://"
+										placeholder="e.g Twitter URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/snapchat.png" alt="" class="img-fluid" />
+										</div>
+										<label for="snapchat" class="form-label">Snapchat</label>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="snapchat"
+										value="https://"
+										placeholder="e.g Snapchat URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+								<!-- each form-input @s-->
+								<div class="form-input col-md-6">
+									<div class="form-title">
+										<div class="image-container">
+											<img src="./assets/images/tiktok.png" alt="" class="img-fluid" />
+										</div>
+										<label for="tiktok" class="form-label">Tiktok</label>
+									</div>
+									<input
+										type="url"
+										class="form-control"
+										id="tiktok"
+										value="https://"
+										placeholder="e.g Tiktok URL link"
+										autocomplete="off" />
+									<small class="error">Enter valid URL</small>
+								</div>
+								<!-- each form-input @e -->
+							</div>
+							<div class="for-devs mt-5 pt-3">
+								<div class="section-title px-md-3">
+									<h5 class="title">For Developers & Designers</h5>
+								</div>
+								<div class="row col-12 mx-0 mt-5 align-items-center justify-content-between">
+									<!-- each form-input @s-->
+									<div class="form-input col-md-6">
+										<div class="form-title">
+											<div class="image-container">
+												<img src="./assets/images/github.png" alt="" class="img-fluid" />
+											</div>
+											<label for="github" class="form-label">Github</label>
+										</div>
+										<input
+											type="url"
+											class="form-control"
+											id="github"
+											value="https://"
+											placeholder="e.g Github URL link"
+											autocomplete="off" />
+										<small class="error">Enter valid URL</small>
+									</div>
+									<!-- each form-input @e -->
+									<!-- each form-input @s-->
+									<div class="form-input col-md-6">
+										<div class="form-title">
+											<div class="image-container">
+												<img src="./assets/images/behance.png" alt="" class="img-fluid" />
+											</div>
+											<label for="behance" class="form-label">Behance</label>
+										</div>
+										<input
+											type="url"
+											class="form-control"
+											id="behance"
+											value="https://"
+											placeholder="e.g Behance URL link"
+											autocomplete="off" />
+										<small class="error">Enter valid URL</small>
+									</div>
+									<!-- each form-input @e -->
+									<!-- each form-input @s-->
+									<div class="form-input col-md-6">
+										<div class="form-title">
+											<div class="image-container">
+												<img src="./assets/images/dribbble.png" alt="" class="img-fluid" />
+											</div>
+											<label for="dribbble" class="form-label">Dribbble</label>
+										</div>
+										<input
+											type="url"
+											class="form-control"
+											id="dribbble"
+											value="https://"
+											placeholder="e.g Dribbble URL link"
+											autocomplete="off" />
+										<small class="error">Enter valid URL</small>
+									</div>
+									<!-- each form-input @e -->
+									<!-- each form-input @s-->
+									<div class="form-input col-md-6">
+										<div class="form-title">
+											<div class="image-container">
+												<img src="./assets/images/medium.png" alt="" class="img-fluid" />
+											</div>
+											<label for="medium" class="form-label">Medium</label>
+										</div>
+										<input
+											type="url"
+											class="form-control"
+											id="medium"
+											value="https://"
+											placeholder="e.g Medium URL link"
+											autocomplete="off" />
+										<small class="error">Enter valid URL</small>
+									</div>
+									<!-- each form-input @e -->
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- each section form @e -->
+					<!-- each section form @s -->
+					<section class="image">
+						<div class="section-title px-md-3">
+							<h5 class="title">Social Media Info</h5>
+						</div>
+						<div class="section-inner">
+							<div class="form-input">
+								<label for="fullname" class="form-label">Fullname</label>
+								<input type="text" class="form-control" id="fullname" placeholder="e.g Lastname Firstname Middlename " />
+							</div>
+							<div class="form-input">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="e.g abc@gmail.com" />
+								<small class="error">Please enter a valid email address !</small>
+							</div>
+						</div>
+					</section>
+					<!-- each section form @e -->
+					<!-- each section form @s -->
+					<section class="social-media-info">
+						<div class="section-title px-md-3">
 							<h5 class="title">Social Media Info</h5>
 						</div>
 						<div class="section-inner">
