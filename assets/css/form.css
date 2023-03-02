@@ -147,3 +147,41 @@ section .section-title .title-small-text {
 	margin: 0;
 	font-size: 1rem;
 }
+section.position-selected [position] {
+	/* display: none; */
+}
+
+/* document-image */
+.document-image .image-container {
+	border: 2px dashed var(--dark-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	border-radius: var(--mdRadius);
+	padding: 2rem;
+}
+.document-image .image-container > svg {
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	color: var(--dark-blue);
+}
+.document-image .image-add-toggler {
+	border: none;
+	background-color: var(--dark-blue);
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--white);
+	padding: 12px 2rem;
+	border-radius: var(--mdRadius);
+}
+.document-image .image-add-toggler svg {
+	width: 25px;
+	height: 25px;
+}
+.document-image .image-add-toggler span {
+	color: var(--white);
+	padding: 5px;
+}
