@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "qs";
+	src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+:root {
+	--font-family: "qs";
+	--secondary-clr: #f5f5dc8a;
+	--smRadius: 5px;
+	--mdRadius: 10px;
+	--lgRadius: 1rem;
+	--rounded-oval: 100vw;
+	--rounded: 50%;
+	--all-transition: 120ms ease;
+	--link-button-transition: 285ms ease;
+	--black: #000;
+	--white: #fff;
+	--dark-blue: #192340;
+	--dark-blue-opacity: rgb(25, 35, 64, 0.5);
+	--light-border: 1.2px solid var(--white);
+	--md-border: 1.3px solid var(--dark-blue);
+	--primary-clr: #101935;
+	--gray: #d9d1d136;
+}
+html {
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-family);
+	/* -webkit-transition: var(--all-transition);
+	-moz-transition: var(--all-transition);
+	-ms-transition: var(--all-transition);
+	-o-transition: var(--all-transition);
+	transition: var(--all-transition); */
+}
+:is(h1, h2, h3, h4, h5, h6, p, span) {
+	font-weight: normal;
+	margin: 0;
+	color: var(--dark-blue);
+}
+:is(ul, li) {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	list-style-type: none;
+}
+:is(a, button) {
+	-webkit-transition: var(--link-button-transition);
+	-moz-transition: var(--link-button-transition);
+	-ms-transition: var(--link-button-transition);
+	-o-transition: var(--link-button-transition);
+	transition: var(--link-button-transition);
+	font-size: 0.9rem;
+	text-decoration: none;
+	outline: none;
+}
