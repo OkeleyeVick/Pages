@@ -10,8 +10,121 @@
 	</head>
 	<body>
 		<div class="container p-md-0">
-			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat eius ea eaque enim, in distinctio iure ad! Minus in ab, nulla labore,
-			cum repellendus possimus aut facilis explicabo et quisquam.
+			<div class="title-container">
+				<h2 class="title">Fill the form carefully</h2>
+				<small>** Please while filling the form, ensure you fill them with them with the correct and available details.</small>
+			</div>
+			<div class="form-container col-md-8 mx-auto">
+				<form action="">
+					<!-- each section form @s -->
+					<section class="user-personal-info">
+						<div class="section-title px-md-3">
+							<h5 class="title">Personal Info</h5>
+						</div>
+						<div class="section-inner">
+							<div class="row m-0 col-12 align-items-center justify-content-between">
+								<!-- each input @s -->
+								<div class="form-input col-lg-6 p-0 px-md-3">
+									<label for="fullname" class="form-label">Fullname</label>
+									<input
+										type="text"
+										class="form-control"
+										id="fullname"
+										placeholder="e.g Lastname Firstname Middlename"
+										autocomplete="off" />
+									<div class="sub-text">
+										<small class="error">Please enter a valid email address</small>
+									</div>
+								</div>
+								<!-- each input @e -->
+								<!-- each input @s -->
+								<div class="form-input col-lg-6 p-0 px-md-3">
+									<label for="phone" class="form-label">Phone number</label>
+									<input type="tel" class="form-control" id="phone" placeholder="Enter phone number" autocomplete="off" />
+									<div class="sub-text">
+										<small class="error">Please enter a valid email address</small>
+									</div>
+								</div>
+								<!-- each input @e -->
+								<!-- each input @s -->
+								<div class="form-input col-lg-6 p-0 px-md-3">
+									<label for="email" class="form-label">Email</label>
+									<input type="email" class="form-control" id="email" placeholder="e.g abc@gmail.com" autocomplete="off" />
+									<div class="sub-text">
+										<small class="error">Please enter a valid email address</small>
+										<small class="little-info">
+											<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+												<mask id="ipTCaution0">
+													<g fill="none" stroke="#fff" stroke-width="4">
+														<path
+															fill="#555"
+															fill-rule="evenodd"
+															stroke-linejoin="round"
+															d="M24 5L2 43h44L24 5Z"
+															clip-rule="evenodd" />
+														<path stroke-linecap="round" d="M24 35v1m0-17l.008 10" />
+													</g>
+												</mask>
+												<path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTCaution0)" />
+											</svg>
+											<span> Ensure you enter a valid email </span>
+										</small>
+									</div>
+								</div>
+								<!-- each input @e -->
+								<!-- each input @s -->
+								<div class="form-input col-lg-6 p-0 px-md-3">
+									<div class="form-title">
+										<!-- each input @e -->
+										<label for="nickname" class="form-label">Nickame</label>
+										<span class="optional">Optional</span>
+									</div>
+									<input type="text" class="form-control" id="nickname" autocomplete="off" />
+									<div class="sub-text">
+										<small class="error">Please enter a valid email address</small>
+										<small class="little-info">
+											<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+												<mask id="ipTCaution0">
+													<g fill="none" stroke="#fff" stroke-width="4">
+														<path
+															fill="#555"
+															fill-rule="evenodd"
+															stroke-linejoin="round"
+															d="M24 5L2 43h44L24 5Z"
+															clip-rule="evenodd" />
+														<path stroke-linecap="round" d="M24 35v1m0-17l.008 10" />
+													</g>
+												</mask>
+												<path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTCaution0)" />
+											</svg>
+											<span> Nickname musn't have any special chars e.g +, ?, <, > </span>
+										</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- each section form @e -->
+					<!-- each section form @s -->
+					<section class="social-media-info">
+						<div class="section-title">
+							<h5 class="title">Social Media Info</h5>
+						</div>
+						<div class="section-inner">
+							<div class="form-input">
+								<label for="fullname" class="form-label">Fullname</label>
+								<input type="text" class="form-control" id="fullname" placeholder="e.g Lastname Firstname Middlename " />
+							</div>
+							<div class="form-input">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="e.g abc@gmail.com" />
+								<small class="error">Please enter a valid email address</small>
+							</div>
+						</div>
+					</section>
+					<!-- each section form @e -->
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
