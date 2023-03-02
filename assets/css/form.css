@@ -191,3 +191,23 @@ section.position-selected [position] {
 	color: var(--white);
 	padding: 5px;
 }
+
+/* position selected */
+.position-selected .dev-stacks-select-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2.5rem 2rem;
+}
+@media all and (min-width: 768px) {
+	.position-selected .dev-stacks-select-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.dev-stacks-select-container .form-input {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dev-stacks-select-container .form-input img {
+	max-width: 50px;
+}
