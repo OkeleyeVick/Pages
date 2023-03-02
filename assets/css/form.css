@@ -147,11 +147,17 @@ section .section-title .title-small-text {
 	margin: 0;
 	font-size: 1rem;
 }
+.position-held .form-check .form-check-label {
+	font-size: 0.95rem;
+}
 section.position-selected [position] {
 	/* display: none; */
 }
 
 /* document-image */
+.document-image > .row {
+	row-gap: 2rem;
+}
 .document-image .image-container {
 	border: 2px dashed var(--dark-blue);
 	display: flex;
