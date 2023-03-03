@@ -32,11 +32,11 @@ html {
 	margin: 0;
 	padding: 0;
 	font-family: var(--font-family);
-	/* -webkit-transition: var(--all-transition);
+	-webkit-transition: var(--all-transition);
 	-moz-transition: var(--all-transition);
 	-ms-transition: var(--all-transition);
 	-o-transition: var(--all-transition);
-	transition: var(--all-transition); */
+	transition: var(--all-transition);
 }
 :is(h1, h2, h3, h4, h5, h6, p, span) {
 	font-weight: normal;
@@ -61,6 +61,16 @@ html {
 }
 body {
 	background-color: #f4f2f200;
+}
+.title-container {
+	margin-top: 4rem;
+}
+.title-container .title {
+	font-weight: 700;
+}
+.title-container small {
+	font-weight: 600;
+	color: var(--primary-clr);
 }
 .form-container section {
 	padding: 2rem 0 0.5rem;
@@ -99,6 +109,11 @@ section .section-title .title-small-text {
 .form-container section .form-input .form-control {
 	min-height: 3.2rem;
 	font-weight: 500;
+}
+.form-container section .form-input .form-control:focus {
+	border: 1.5px solid var(--dark-blue);
+	/* box-shadow: 0 0 0 0.25rem var(--dark-blue-opacity); */
+	box-shadow: none;
 }
 .form-container section .form-input .form-control::placeholder {
 	font-size: 0.88rem;
