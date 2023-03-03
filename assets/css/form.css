@@ -74,6 +74,7 @@ body {
 }
 .form-container section {
 	padding: 2rem 0 0.5rem;
+	overflow: hidden;
 }
 .section-title .title {
 	font-weight: 600;
