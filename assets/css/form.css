@@ -133,7 +133,7 @@ section .section-title .title-small-text {
 }
 .form-input .sub-text .little-info {
 	opacity: 0;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	visibility: hidden;
 	transition: 300ms ease-in-out;
 	transition-delay: 300ms;
@@ -166,7 +166,7 @@ section .section-title .title-small-text {
 	font-size: 0.95rem;
 }
 [position] {
-	display: none;
+	/* display: none; */
 }
 
 /* document-image */
@@ -386,4 +386,64 @@ textarea.form-control::placeholder {
 	visibility: visible;
 	opacity: 1;
 	transform: translateY(0);
+}
+/* entrepreneur reviews */
+.review-result-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+@media all and (max-width: 768px) {
+	.review-result-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media all and (max-width: 600px) {
+	.review-result-container {
+		grid-template-columns: 1fr;
+	}
+}
+.each-review-container {
+	background-color: var(--white);
+	padding: 1rem 0.8rem;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: var(--mdRadius);
+}
+.each-review-container .r_30djs span {
+	font-weight: 500;
+	font-size: 0.9rem;
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	line-clamp: 5;
+}
+.each-review-container button.delete {
+	border: none;
+	background-color: transparent;
+	border-radius: var(--rounded);
+	padding: 4px;
+	transition: 300ms ease-in-out;
+}
+.each-review-container button.delete:hover {
+	background-color: var(--dark-blue);
+}
+.each-review-container button.delete:hover svg {
+	color: var(--white);
+}
+.each-review-container button.delete svg {
+	color: var(--dark-blue);
+}
+.each-review-container .r_na03sof .name {
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+.review-container button.submit-review {
+	background-color: var(--dark-blue);
+	color: var(--white);
+	padding: 0.7rem 1.5rem;
+	border: none;
+	border-radius: var(--smRadius);
+	font-size: 0.9rem;
+	margin-top: 5px;
 }

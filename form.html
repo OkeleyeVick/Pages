@@ -13,7 +13,7 @@
 			<div class="title-container px-md-3">
 				<h2 class="title">Fill the form carefully</h2>
 				<small>
-					** This is going to take a while so, please while filling the form, ensure you fill them with them with the correct and available
+					** This is going to take a while so, please while filling out the form, ensure you fill them with the correct and available
 					details.
 				</small>
 			</div>
@@ -376,7 +376,9 @@
 								<div class="section-title">
 									<h5 class="title">Upload Document</h5>
 									<div class="my-2">
-										<small class="title-small-text fw-bold"> Upload CV / Resume in .doc, docx, .txt, .pdf format</small>
+										<small class="title-small-text text-nowrap fw-bold">
+											Upload CV / Resume in .doc, docx, .txt, .pdf format
+										</small>
 									</div>
 								</div>
 								<div class="image-container px-md-3 mt-4">
@@ -458,7 +460,7 @@
 											<span> Front-end Developer </span>
 										</a>
 										<a role="button" class="role-position">
-											<span> Back-end Dev bnmeloper </span>
+											<span> Back-end Developer </span>
 										</a>
 										<a role="button" class="role-position">
 											<span> Full-stack Developer </span>
@@ -543,7 +545,9 @@
 							<textarea class="form-control" id="about-techie-one" rows="3" placeholder="Write about yourself as a techie"></textarea>
 						</div>
 						<div class="form-input col-md-6">
-							<label for="about-techie-two" class="form-label"> What service do you provide (Not more than 400 words) </label>
+							<label for="about-techie-two" class="form-label text-nowrap">
+								What service do you provide (Not more than 400 words)
+							</label>
 							<textarea
 								class="form-control"
 								id="about-techie-two"
@@ -1329,6 +1333,49 @@
 									<small> File size should not be more than 5MB </small>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="reviews">
+						<div class="section-title">
+							<h5 class="title">Reviews</h5>
+							<div class="my-1">
+								<small class="title-small-text"> Write the reviews you've gotten from your people about your brand </small>
+							</div>
+						</div>
+						<div class="review-container my-4">
+							<template id="review_template">
+								<div class="each-review-container">
+									<div class="text-end">
+										<button class="delete" type="button">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+												<path
+													fill="currentColor"
+													d="M8.5 4h3a1.5 1.5 0 0 0-3 0Zm-1 0a2.5 2.5 0 0 1 5 0h5a.5.5 0 0 1 0 1h-1.054l-1.194 10.344A3 3 0 0 1 12.272 18H7.728a3 3 0 0 1-2.98-2.656L3.554 5H2.5a.5.5 0 0 1 0-1h5ZM5.741 15.23A2 2 0 0 0 7.728 17h4.544a2 2 0 0 0 1.987-1.77L15.439 5H4.561l1.18 10.23ZM8.5 7.5A.5.5 0 0 1 9 8v6a.5.5 0 0 1-1 0V8a.5.5 0 0 1 .5-.5ZM12 8a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V8Z" />
+											</svg>
+										</button>
+									</div>
+									<div class="r_30djs my-3">
+										<span>
+											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat, quae adipisci sapiente ipsum
+											laudantium non mollitia accusamus repellat, necessitatibus omnis ab, recusandae aliquid. Deleniti autem
+											voluptatibus quas numquam laudantium?
+										</span>
+									</div>
+									<div class="r_na03sof text-end mt-3">
+										<h6 class="name">Okeleye Victor Olamide</h6>
+									</div>
+								</div>
+							</template>
+							<div class="review-result-container my-4"></div>
+							<div class="form-input">
+								<label for="reviewer-name" class="form-label">Reviewer's name</label>
+								<input type="text" class="form-control" id="reviewer-name" placeholder="Enter reviewer's name" />
+							</div>
+							<div class="form-input mt-3">
+								<label for="review" class="form-label">Review</label>
+								<textarea class="form-control" id="review" rows="3" placeholder="Enter his/her review..."></textarea>
+							</div>
+							<button class="submit-review">Submit Review</button>
 						</div>
 					</div>
 				</div>
