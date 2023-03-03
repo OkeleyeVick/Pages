@@ -151,14 +151,14 @@ section .section-title .title-small-text {
 	font-size: 0.95rem;
 }
 section.position-selected [position] {
-	/* display: none; */
+	display: none;
 }
 
 /* document-image */
-.document-image > .row {
+:is(.document-image, .entrepreneur-container .brand-images) > .row {
 	row-gap: 2rem;
 }
-.document-image .image-container {
+:is(.document-image, .entrepreneur-container .brand-images) .image-container {
 	border: 2px dashed var(--dark-blue);
 	display: flex;
 	flex-direction: column;
@@ -167,13 +167,13 @@ section.position-selected [position] {
 	border-radius: var(--mdRadius);
 	padding: 2rem;
 }
-.document-image .image-container > svg {
+:is(.document-image, .entrepreneur-container .brand-images) .image-container > svg {
 	width: 100px;
 	height: 100px;
 	opacity: 0.5;
 	color: var(--dark-blue);
 }
-.document-image .image-add-toggler {
+:is(.document-image, .entrepreneur-container .brand-images) .image-add-toggler {
 	border: none;
 	background-color: var(--dark-blue);
 	display: flex;
@@ -183,11 +183,11 @@ section.position-selected [position] {
 	padding: 12px 2rem;
 	border-radius: var(--mdRadius);
 }
-.document-image .image-add-toggler svg {
+:is(.document-image, .entrepreneur-container .brand-images) .image-add-toggler svg {
 	width: 25px;
 	height: 25px;
 }
-.document-image .image-add-toggler span {
+:is(.document-image, .entrepreneur-container .brand-images) .image-add-toggler span {
 	color: var(--white);
 	padding: 5px;
 }
@@ -207,7 +207,32 @@ section.position-selected [position] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 0.7rem;
 }
 .dev-stacks-select-container .form-input img {
 	max-width: 50px;
+}
+.dev-stacks-select-container .form-check-input {
+	width: 1.4rem;
+	height: 1.4rem;
+}
+.form-check-input:checked[type="checkbox"] {
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="256" height="256" viewBox="0 0 256 256"%3E%3Cpath fill="white" d="M104 196a12.2 12.2 0 0 1-8.5-3.5l-56-56a12 12 0 0 1 17-17L104 167L207.5 63.5a12 12 0 0 1 17 17l-112 112a12.2 12.2 0 0 1-8.5 3.5Z"%2F%3E%3C%2Fsvg%3E');
+	/* background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M16 8H8v8h8V8Z"%2F%3E%3C%2Fsvg%3E'); */
+}
+.form-check-input {
+	cursor: pointer;
+}
+.form-check-input:checked {
+	background-color: var(--dark-blue);
+	border-color: var(--dark-blue);
+}
+.form-check-input:focus {
+	border-color: var(--dark-blue);
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem var(--dark-blue-opacity);
+}
+
+.students .form-input .info {
+	font-weight: 500;
 }
