@@ -167,7 +167,7 @@ section .section-title .title-small-text {
 	font-size: 0.95rem;
 }
 [position] {
-	/* display: none; */
+	display: none;
 }
 
 /* document-image */
