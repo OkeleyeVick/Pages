@@ -1,26 +1,26 @@
 const positions = document.querySelectorAll("[position]");
-// const parentContainer = document.querySelector(".position-selected");
-// const selectRadios = document.querySelectorAll(".inner-section .form-check [type='radio']");
+const parentContainer = document.querySelector(".position-selected");
+const selectRadios = document.querySelectorAll(".inner-section .form-check [type='radio']");
 
-// selectRadios.forEach((selectRadio) => {
-// 	selectRadio.addEventListener("change", function () {
-// 		const idOfRadio = this.id;
-// 		positions.forEach((pos) => {
-// 			if (idOfRadio == pos.getAttribute("position")) {
-// 				if (parentContainer.hasChildNodes()) {
-// 					const child = parentContainer.childNodes[0];
-// 					pos.style.display = "block";
-// 					parentContainer.replaceChild(pos, child);
-// 				} else {
-// 					parentContainer.append(pos);
-// 				}
-// 				pos.style.display = "block";
-// 			} else {
-// 				pos.style.display = "none";
-// 			}
-// 		});
-// 	});
-// });
+selectRadios.forEach((selectRadio) => {
+	selectRadio.addEventListener("change", function () {
+		const idOfRadio = this.id;
+		positions.forEach((pos) => {
+			if (idOfRadio == pos.getAttribute("position")) {
+				if (parentContainer.hasChildNodes()) {
+					const child = parentContainer.childNodes[0];
+					pos.style.display = "block";
+					parentContainer.replaceChild(pos, child);
+				} else {
+					parentContainer.append(pos);
+				}
+				pos.style.display = "block";
+			} else {
+				pos.style.display = "none";
+			}
+		});
+	});
+});
 
 const dropdownContainer = document.querySelector(".dev-position .dropdown-container");
 const dropdownTrigger = document.querySelector(".dev-position .dropdown_trigger");
